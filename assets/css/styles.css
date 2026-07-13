@@ -1,5 +1,10 @@
 /* styles.css */
 
-* {
-	font-family: Arial;
+body {
+	margin: 1rem;
+	background-color: black;
+	color: whitesmoke;
+	font-size: 5rem;
+	overflow: hidden;
+	background-image: url("../img/flames.gif");
 }
