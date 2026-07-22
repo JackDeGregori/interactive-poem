@@ -13,10 +13,13 @@ function randomize() {
     console.log(divs.length, "Randomize!");
 
     divs.forEach(function (div){
-        let scale = randomNumber(.5, 1.2);
+        let scale = randomNumber(1, 1.5);
         let translateX = randomNumber(0,50);
-        let translateY = randomNumber(0,20);
-        let rotate = randomNumber(0, 360);
+        let translateY = -randomNumber(0,20);
+        let rotate = randomNumber(0, 90);
+        let red = randomNumber(0,255);
+        let green = randomNumber(0,255);
+        let blue = randomNumber(0,100);
 
         if (Math.random() > 0.5) {
             scale = 1;
@@ -25,6 +28,7 @@ function randomize() {
         }
 
         div.style.transform = `scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)`;
+        div.style.color = `rgb(${red} ${green} ${blue})`;
     });
 }
 
